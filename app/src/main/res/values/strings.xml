@@ -9,7 +9,7 @@
     <string name="alertTxt">This is a Alert. It will interrupt all action on the screen. Until a user takes action from the alert.</string>
     <string name="alertOKBtnTxt">Your OK Btn Text!</string>
     <string name="notificationToast">Pull down from the top of your screen to see the notification.</string>
-    <string name="customAlertDialogYesTxt">So glad I could help. Please us this anytime you would like!</string>
+    <string name="customAlertDialogYesTxt">So glad I could help. Please use this anytime you would like!</string>
     <string name="customAlertDialogNoTxt">So sorry I will strive to do better next time.</string>
     <string name="customAlertDialogOkBtnTxt">Thank You Again!</string>
 </resources>
