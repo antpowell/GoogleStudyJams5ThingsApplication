@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.sgt_powell.studyjamapp.MainActivity">
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Show Case View"
+        android:id="@+id/showCaseViewBtn"
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Alert"
+        android:id="@+id/alertDialogBtn"
+        android:layout_above="@+id/showCaseViewBtn"
+        android:layout_alignLeft="@+id/showCaseViewBtn"
+        android:layout_alignStart="@+id/showCaseViewBtn"
+        android:layout_marginBottom="25dp" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Notification"
+        android:id="@+id/notificationBtn"
+        android:layout_below="@+id/showCaseViewBtn"
+        android:layout_alignRight="@+id/showCaseViewBtn"
+        android:layout_alignEnd="@+id/showCaseViewBtn"
+        android:layout_marginTop="25dp" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Custom Dialog"
+        android:id="@+id/customDialogBtn"
+        android:layout_below="@+id/notificationBtn"
+        android:layout_alignRight="@+id/notificationBtn"
+        android:layout_alignEnd="@+id/notificationBtn"
+        android:layout_marginTop="25dp" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Toast"
+        android:id="@+id/toastBtn"
+        android:layout_marginBottom="25dp"
+        android:layout_above="@+id/alertDialogBtn"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="5 Different Ways To Display Messages To Your Users"
+        android:id="@+id/titleText"
+        android:layout_alignParentTop="true"
+        android:textAlignment="center" />
+</RelativeLayout>
