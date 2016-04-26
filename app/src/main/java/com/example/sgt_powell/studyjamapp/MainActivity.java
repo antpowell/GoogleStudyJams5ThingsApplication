@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(MainActivity.this);
                 View view = LayoutInflater.from(MainActivity.this).inflate(R.layout.alert_dialog_layout, null);
-//                Get the radio buttons from the inflated View
+//                Get the radio buttons from the inflated View NOTE: must find the id from the inflated view to get the right element
                 final RadioButton yesRadioBtn = (RadioButton) view.findViewById(R.id.yesRadioBtn);
                 final RadioButton noRadioBtn = (RadioButton) view.findViewById(R.id.noRadioBtn);
 //                Show the custom layout in AlertDialog
