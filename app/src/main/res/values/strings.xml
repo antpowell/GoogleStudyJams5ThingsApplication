@@ -12,4 +12,5 @@
     <string name="customAlertDialogYesTxt">So glad I could help. Please use this anytime you would like!</string>
     <string name="customAlertDialogNoTxt">So sorry I will strive to do better next time.</string>
     <string name="customAlertDialogOkBtnTxt">Thank You Again!</string>
+    <string name="customAlertNoSelectionTxt">Feedback would be very helpful. Please make a selection next time.</string>
 </resources>

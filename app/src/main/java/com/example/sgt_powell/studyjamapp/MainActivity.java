@@ -37,9 +37,6 @@ public class MainActivity extends AppCompatActivity {
         Button showCaseViewBtn = (Button) findViewById(R.id.showCaseViewBtn);
         Button notificatinBtn = (Button) findViewById(R.id.notificationBtn);
         Button customDialogBtn = (Button) findViewById(R.id.customDialogBtn);
-        final RadioButton yesRadioBtn = (RadioButton) findViewById(R.id.yesRadioBtn);
-        RadioButton noRadioBtn = (RadioButton) findViewById(R.id.noRadioBtn);
-        final boolean didTheyLike;
 
 
 //        --------------->Example of a Toast<---------------
@@ -113,10 +110,13 @@ public class MainActivity extends AppCompatActivity {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 boolean yesIsChecked = yesRadioBtn.isChecked();
+                                boolean noIsChecked = noRadioBtn.isChecked();
                                 if (yesIsChecked) {
                                     Toast.makeText(MainActivity.this, R.string.customAlertDialogYesTxt, Toast.LENGTH_LONG).show();
-                                } else {
+                                }else if(noIsChecked){
                                     Toast.makeText(getApplicationContext(), R.string.customAlertDialogNoTxt, Toast.LENGTH_LONG).show();
+                                }else{
+                                    Toast.makeText(MainActivity.this, R.string.customAlertNoSelectionTxt, Toast.LENGTH_SHORT).show();
                                 }
                                 dialog.cancel();
                             }
